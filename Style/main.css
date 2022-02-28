@@ -93,3 +93,10 @@ body{
     height: 400px;
     border-bottom-left-radius: 100px;
 }
+.outerImageFrame{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    background-color:#4277FF20;
+    /* make it relative */
+}
