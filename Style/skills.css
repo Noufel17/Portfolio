@@ -1,0 +1,24 @@
+.skills_middle_container{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.skill_container_right{
+    display:inline-block;
+    width:40%;
+}
+/* can be tha same class*/
+.skill_container_left{
+    display:inline-block;
+    width:40%;
+}
+.skill_title{
+    color:black;
+    font-weight: 700;
+    font-size: 25px;
+}
+.skill_list_container{
+    display:block;
+    margin-left: 10%;
+    margin-top: 5%;
+}
