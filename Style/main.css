@@ -6,7 +6,7 @@
     font-size: 20px;
 }
 body{
-    padding:40px 80px;
+    padding:40px 120px;
 }
 
 .navBar_container{
@@ -108,7 +108,7 @@ body{
     height: 400px;
     position: absolute;
     top:30px;
-    left:30px;
+    left:24px;
     border-bottom-left-radius: 100px;
 }
 .outerImageFrame{

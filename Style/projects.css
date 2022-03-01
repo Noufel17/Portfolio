@@ -1,0 +1,19 @@
+.projects_middle_container{
+    display: block;
+    margin-top: 80px;
+}
+.project_container{
+    width:65%;
+    margin-bottom: 3%;
+}
+.project_title{
+    color:black;
+    font-weight: 700;
+    font-size: 25px;
+}
+.project_content{
+    display:block;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
