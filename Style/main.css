@@ -22,14 +22,21 @@ body{
     margin-inline: 20px;
 }
 /* nav bar elements on hover */
-.navBar_elems a:hover{
-    padding:8px 8px;
+.navBar_elems a:hover, .navBar_elems a:active{
+     /* padding:8px 8px; */
     /* background-color: lightgray; */
     color:#2A00D6;
     font-size: 22px;
     font-weight: 700; 
+    /* transition: all .2s ease-in-out 0s; */
     /* text-decoration: underline; */
-    border-radius: 8px;
+    /* border-radius: 8px; */
+}
+/*active doesnt work as intended */
+.navBar_elems a:active{
+    color:#2A00D6;
+    font-size: 22px;
+    font-weight: 700;
 }
 .middle_container{
     display: flex;
