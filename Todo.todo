@@ -1,7 +1,8 @@
-today :
-- contact section with logos 
-- fill content (skills, projects with 2cp project picture)
-- fix color and bold in navbar while on that page (try)
-not today :
-- risponsivity (mobile version is enough i guess)
-- maybe add a footer 
+@today 
+✔ code contact section with logos @done (01/03/2022, 22:54:46)
+☐ fix margin problem in contact page (after the links)
+☐ fill content (skills, projects with 2cp project picture)
+☐ fix color and bold in navbar while on that page (try)
+@not today
+☐ responsivity (mobile version is enough i guess)
+☐ maybe add a footer that contains contacts (no need for that section i guess)
