@@ -2,6 +2,7 @@
 ✔ fix margin problem in contact page (after the links) @done (02/03/2022, 01:25:07)
 ☐ turn the pages into sections in one page with a sticky nav bar
     (you can use IDs to identify sections to navigate to through the nav bar)
+☐ fix sticky bar border not showing 
 ☐ fix color and bold in navbar while on that page (try) with JS
 ☐ fill content (skills , projects..) add pictures for skills and projects too
 ☐ responsivity (mobile version is enough i guess)

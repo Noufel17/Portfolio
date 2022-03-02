@@ -6,13 +6,20 @@
     font-size: 20px;
 }
 body{
-    padding:40px 120px;
+    padding:0px 120px; /**removed padding on top*/
 }
 
 .navBar_container{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    position:sticky;
+    top:0px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    border-bottom:2px;
+    border-color: #2A00D6;
+    
     /* padding:40px 80px; */
 }
 .navBar_elems a{
@@ -118,4 +125,18 @@ body{
     border-bottom-left-radius: 100px;
     position: absolute;
     background-color:#4277FF20;
+}
+/* .sticky{
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+.sticky .skills_middle_container{
+    padding-top: 50px;
+} */
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
