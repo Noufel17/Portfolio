@@ -1,13 +1,13 @@
 .skills_middle_container{
     display:flex;
     justify-content: space-around;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .skill_container_right{
     display:inline-block;
     width:40%;
 }
-/* can be tha same class*/
+/* can be the same class*/
 .skill_container_left{
     display:inline-block;
     width:40%;

@@ -16,8 +16,10 @@ body{
     position:sticky;
     top:0px;
     background-color: #FFFFFF;
-    margin-top: 30px;
-    border-bottom:2px;
+    margin-top: 0px;
+    width:100%;
+    height:80px;
+    border: 2px; /*doesnt work*/
     border-color: #2A00D6;
     z-index:999;
     
@@ -31,17 +33,18 @@ body{
 }
 /* nav bar elements on hover */
 .navBar_elems a:hover, .navBar_elems a:active{
-     /* padding:8px 8px; */
+    padding:8px 8px;
     /* background-color: lightgray; */
     color:#2A00D6;
     font-size: 22px;
-    font-weight: 700; 
+    font-weight: 700;
+    transition: 0.3s ease; 
     /* transition: all .2s ease-in-out 0s; */
     /* text-decoration: underline; */
     /* border-radius: 8px; */
 }
 /*active doesnt work as intended */
-.navBar_elems a:active{
+.navBar_elems a:after{
     color:#2A00D6;
     font-size: 22px;
     font-weight: 700;
@@ -49,7 +52,7 @@ body{
 .middle_container{
     display: flex;
     justify-content:space-between;
-    margin-top:30px;
+    margin-top:80px;
 }
 .left_container{
     display: inline-block;
@@ -71,7 +74,7 @@ body{
     width:67%;
     display:flex;
     justify-content:space-between;
-    margin-top:70px;
+    margin-top:30px;
 }
 .btn_hire{
     background-color: #2A00D6;
@@ -127,6 +130,10 @@ body{
     position: absolute;
     background-color:#4277FF20;
 }
+.paragraph_container{
+    margin-left: 50px;
+    width:65%;
+}
 /* .sticky{
     position: fixed;
     top: 0;
@@ -142,8 +149,14 @@ body{
   }
 }
 .sectionTitle{
-    margin-top: 80px;
     color:#2A00D6;
     font-size: 30px;
     font-weight: 700;
+}
+.middle_about_container{
+    margin-top:40px;
+}
+.section_container{
+    margin-top: 80px;
+    display: block;
 }
