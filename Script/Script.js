@@ -38,4 +38,10 @@ window.onscroll=() =>{
         }   
     }
 }
-
+// document.getElementsByClassName("btn_hire").addEventListner("click",triggerAlert());
+function triggerAlert(){
+    alert("rak mnytek! , need time to learn");
+}
+function notWorking(){
+    alert("not working for now");
+}
