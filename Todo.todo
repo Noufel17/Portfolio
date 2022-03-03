@@ -1,8 +1,10 @@
 ✔ code contact section with logos @done (01/03/2022, 22:54:46)
 ✔ fix margin problem in contact page (after the links) @done (02/03/2022, 01:25:07)
-☐ turn the pages into sections in one page with a sticky nav bar
-    (you can use IDs to identify sections to navigate to through the nav bar)
-☐ fix sticky bar border not showing 
-☐ fix color and bold in navbar while on that page (try) with JS
-☐ fill content (skills , projects..) add pictures for skills and projects too
+✔ turn the pages into sections in one page with a sticky nav bar @done (02/03/2022, 15:18:34)
+✔ fix color and bold in navbar while on that page (try) with JS @done (03/03/2022, 02:18:16)
+☐ complete about me
+✔ fix contact section (redo it) @done (03/03/2022, 02:18:14)
 ☐ responsivity (mobile version is enough i guess)
+✔ add project pictures @done (03/03/2022, 02:18:49)
+☐ add CV to download
+☐ add icon for the tab

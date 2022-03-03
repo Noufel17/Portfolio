@@ -8,6 +8,9 @@
 body{
     padding:0px 120px; /**removed padding on top*/
 }
+.logo{
+    display:contents;
+}
 
 .navBar_container{
     display:flex;
@@ -16,39 +19,48 @@ body{
     position:sticky;
     top:0px;
     background-color: #FFFFFF;
-    margin-top: 30px;
-    border-bottom:2px;
+    margin-top: 0px;
+    width:100%;
+    height:80px;
+    border: 2px; /*doesnt work*/
     border-color: #2A00D6;
+    z-index:999;
     
     /* padding:40px 80px; */
 }
-.navBar_elems a{
+.links{
     text-decoration: none;
     color: #2C2D3D;
     padding:16px 8px;
     margin-inline: 20px;
 }
 /* nav bar elements on hover */
-.navBar_elems a:hover, .navBar_elems a:active{
-     /* padding:8px 8px; */
+.links:hover, .links:active{
+    padding:8px 8px;
     /* background-color: lightgray; */
     color:#2A00D6;
     font-size: 22px;
-    font-weight: 700; 
+    font-weight: 700;
+    transition: 0.3s ease; 
     /* transition: all .2s ease-in-out 0s; */
     /* text-decoration: underline; */
     /* border-radius: 8px; */
 }
 /*active doesnt work as intended */
-.navBar_elems a:active{
+.when_in_section{
     color:#2A00D6;
     font-size: 22px;
     font-weight: 700;
 }
+.spaceUnderNavBar{
+    height:80px;
+    display:block;
+}
 .middle_container{
     display: flex;
     justify-content:space-between;
-    margin-top:80px;
+    /* margin-top:80px; */
+    
 }
 .left_container{
     display: inline-block;
@@ -70,10 +82,11 @@ body{
     width:67%;
     display:flex;
     justify-content:space-between;
-    margin-top:70px;
+    margin-top:30px;
 }
 .btn_hire{
     background-color: #2A00D6;
+    text-align: center;
     padding: 8px 35px;
     color:#FFFFFF;
     border-color: #2A00D6;
@@ -89,8 +102,10 @@ body{
 }
 .btn_cv{
     background-color: #FFFFFF;
+    text-align: center;
     padding: 8px 35px;
     color: #2A00D6;
+    border-style: 2px solid;
     border-color: #2A00D6;
     border-radius: 8px;
     font-size: 14px;
@@ -110,7 +125,7 @@ body{
 }
 /*delay hover effect*/
 .imageFrame img{
-    z-index: 999;
+    z-index: 700;
     width: 350px;
     height: 400px;
     position: absolute;
@@ -126,6 +141,10 @@ body{
     position: absolute;
     background-color:#4277FF20;
 }
+.paragraph_container{
+    margin-left: 50px;
+    width:65%;
+}
 /* .sticky{
     position: fixed;
     top: 0;
@@ -139,4 +158,353 @@ body{
   html {
     scroll-behavior: smooth;
   }
+}
+/*SECTIONS*/
+.sectionTitle{
+    color:#2A00D6;
+    font-size: 30px;
+    font-weight: 700;
+}
+.middle_about_container{
+    margin-top:40px;
+}
+.section_container{
+    /* margin-top: 80px; */
+    display: block;
+    padding-top:80px;
+}
+/*SKILLS*/
+.skills_middle_container{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.skill_container_right{
+    display:inline-block;
+    width:40%;
+}
+/* can be the same class*/
+.skill_container_left{
+    display:inline-block;
+    width:40%;
+}
+.skill_title{
+    color:black;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.skill_list_container{
+    display:block;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* PROJECTS*/
+.projects_middle_container{
+    display: block;
+    margin-top: 40px;
+}
+.project_container{
+    margin-left: 50px;
+    margin-bottom: 3%;
+}
+.project_title{
+    color:black;
+    font-weight: 700;
+    font-size: 25px;
+}
+.project_content_container{
+    display:flex;
+    justify-content: space-between;
+}
+.project_content{
+    display:inline-block;
+    width:65%;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.project_pic{
+    display: inline-block;
+    height: 200px;
+    width:250px;
+}
+/*CONTACT*/
+.contactPage_middle_container{
+    display:block;
+    margin-top:40px;
+    
+}
+.contact_upper_container{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.contact_lower_container{
+    display:flex;
+    justify-content:center;
+}
+.contact_container{
+    display:flex;
+    justify-content: start;
+}
+
+.icon img{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.iconLower img{
+    display:flex;
+    justify-content: space-evenly;
+    height:50px;
+    width:50px;
+    margin-right:20px;
+}
+.link a{
+    display:inline-block;
+}
+.link label{
+    display: inline-block;
+}
+@media(max-width:1530px){
+    .btn_hire{
+        font-size: 10px;
+    }
+    .btn_cv{
+        font-size: 10px;
+    }
+    .outerImageFrame{
+        display: none;
+    }
+    .nameTitle{
+        font-size:50px ;
+    }
+} 
+@media(max-width:1280px){
+    .nameTitle{
+        font-size: 40px;
+    }
+    .links{
+        font-size: 16px;
+    }
+    .links:hover, .links:active{
+        font-size: 18px;
+    }
+    .logo{
+        width : 100px ;
+        height: 25px;
+    }
+    .imageFrame img{
+        margin-top: 30px;
+        width: 250px;
+        height: 300px;
+    }
+    .buttons{
+        width:80%;
+    }
+    .skill_title{
+        font-size: 22px;
+    }
+    .project_title{
+        font-size: 22px;
+    }
+    .sectionTitle{
+        font-size: 25px;
+    }
+    *{
+        font-size: 16px;
+    } 
+    .when_in_section{
+        font-size: 18px;
+    }   
+}
+@media(max-width:1160px){
+    .nameTitle{
+        font-size: 33px;
+        line-height: 30px;
+    }
+    .buttons{
+        width:100%
+    }
+    .links{
+        font-size: 14px;
+        margin-inline: 10px;
+    }
+    .links:hover, .links:active{
+        font-size: 16px;
+    }
+    .project_pic{
+        width: 200px;
+        height: 150px;
+    }
+     .project_content{ /*seems not to work */
+        width:55%;
+    }
+    .imageFrame img{
+        margin-top: 70px;
+        width: 200px;
+        height: 250px;
+    }
+    .skill_title{
+        font-size: 20px;
+    }
+    .project_title{
+        font-size: 20px;
+    }
+    .sectionTitle{
+        font-size: 22px;
+    }
+    .when_in_section{
+        font-size: 16px;
+    }
+}
+@media(max-width:900px){
+    .middle_container{
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }
+    .left_container{
+        display: block;
+        margin-top:70px;
+        width:100%;
+    }
+    .buttons{
+        width:80%;
+    }
+    .right_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        position:relative;    
+    }
+    .imageFrame img{
+        position: relative;
+        margin-top: 20px;
+        margin-left:-40px;
+        width: 250px;
+        height: 300px;
+        border-bottom-left-radius: 0px;
+    }
+    .paragraph_container{
+        width:100%;
+        margin-left: 20px;
+    }
+    .skills_middle_container{
+        display:block;
+        margin-left: 20px;
+    }
+    .skill_container_right{
+        display:block;
+        width:100%;
+    }
+    /* can be the same class*/
+    .skill_container_left{
+        display:block;
+        width:100%;
+    }
+    .project_container{
+        margin-left: 20px;
+    }
+    .project_title{
+        color:black;
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .project_content_container{
+        display:flex;
+        justify-content: center;
+    }
+    .project_content{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .project_pic{
+        display: inline-block;
+        align-self:center;
+        height: 200px;
+        width:250px;
+    }
+    .contact_upper_container{
+        display:block;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .contact_container{
+        display:flex;
+        justify-content: center;
+    }
+    .icon img{
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+    body{
+        padding:0px 60px
+    }
+
+}
+@media(max-width:450px){
+    .buttons{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width:100%;
+    }
+    .btn_hire{
+        margin-bottom: 10px;
+    }
+
+    .nameTitle{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .links{
+        font-size: 12px;
+        margin-inline: 8px;
+    }
+    .links:hover, .links:active{
+        font-size: 14px;
+    }
+    .when_in_section{
+        font-size: 14px;
+    }
+    .project_title{
+        color:black;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .project_content_container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project_content{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .project_pic{
+        display: inline-block;
+        align-self:center;
+        height: 200px;
+        width:250px;
+    }
+    .skill_title{
+        font-size: 18px;
+    }
+    .project_title{
+        font-size: 18px;
+    }
+    .sectionTitle{
+        font-size: 20px;
+    }
+    body{
+        padding:0px 40px;
+        font-size:14px ;
+    }
+
 }
