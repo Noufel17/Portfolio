@@ -8,6 +8,7 @@
     <link rel="Stylesheet" href="../Style/skills.css">
     <link rel="stylesheet" href="../Style/projects.css">
     <link rel="stylesheet" href="../Style/contact.css">
+    <script type="text/javascript" src="../Script/Script.js"></script>
     <!--logo image for the page-->
     <title>Landing Page</title>
 </head>
@@ -17,14 +18,15 @@
             <svg width="200" height="51.01973966334967" viewBox="0 0 200 51.01973966334967" class="css-1j8o68f"><defs id="SvgjsDefs1001"></defs><g id="SvgjsG1007" featurekey="dVtZHI-0" transform="matrix(3.2372926870397456,0,0,3.2372926870397456,0.0000644961047555825,-13.726120252091027)" fill="#2a00d6"><path d="M6.98 4.58 l-0.000019531 11.56 c0 0.36 0.0066602 0.76 0.02 1.2 s0.02 0.66666 0.02 0.68 c-0.02666 -0.04 -0.12332 -0.25666 -0.28998 -0.65 s-0.33 -0.74334 -0.49 -1.05 l-0.28 -0.54 l-0.72 0 l2.2 4.22 l0.18 0 l0 -15.42 l-0.64 0 z M1.36 7.9399999999999995 l0.27998 0.54 l0.72 0 l-2.22 -4.24 l-0.14 0 l0 15.46 l0.62 0 l0 -11.6 c0 -0.33334 -0.0066602 -0.72334 -0.02 -1.17 s-0.02 -0.67666 -0.02 -0.69 c0.01334 0.04 0.10668 0.26 0.28002 0.66 s0.34 0.74666 0.5 1.04 z M17.22 20 c2.2134 0 4.1 -0.78 5.66 -2.34 c0.77334 -0.76 1.3567 -1.58 1.75 -2.46 s0.59 -1.88 0.59 -3 c0 -2.2266 -0.78 -4.1066 -2.34 -5.64 c-1.56 -1.52 -3.4866 -2.2866 -5.78 -2.3 c-1.4133 0.01334 -2.74 0.36668 -3.98 1.06 c-1.2133 0.70666 -2.18 1.6867 -2.9 2.94 l0.58 0.32 c0.65334 -1.16 1.54 -2.06 2.66 -2.7 c1.1067 -0.64 2.32 -0.96666 3.64 -0.98 c2.1334 0.01334 3.9066 0.72668 5.32 2.14 c1.4133 1.3867 2.1266 3.1066 2.14 5.16 c0 1.0267 -0.18 1.9433 -0.54 2.75 s-0.88666 1.5633 -1.58 2.27 c-1.4267 1.4267 -3.1666 2.14 -5.22 2.14 c-1.28 0 -2.44 -0.27334 -3.48 -0.82 l-0.3 0.58 c1.1333 0.58666 2.3934 0.88 3.78 0.88 z M36.56 4.26 l0 10.64 c0 1.4 -0.37 2.48 -1.11 3.24 s-1.6233 1.1733 -2.65 1.24 l0 0.25 l0 0.07 l0 0.3 c1.28 -0.08 2.3066 -0.55334 3.08 -1.42 s1.16 -2.0934 1.16 -3.68 l0 -10.64 l-0.48 0 z M32.06 19.39998 c-1.04 -0.08 -1.9067 -0.5 -2.6 -1.26 s-1.04 -1.84 -1.04 -3.24 l0 -10.64 l-0.6 0 l0 10.64 c0 1.6 0.38334 2.83 1.15 3.69 s1.7967 1.33 3.09 1.41 l0 -0.29 l0 -0.31 z M40.18 20 l0 -12.34 l0.8 0 l0 -0.56 l-1.34 0 l0 12.9 l0.54 0 z M44.980000000000004 4.800000000000001 l0 -0.56 l-5.34 0 l0 0.56 l5.34 0 z M48.14 14.16 l0 -9.36 l4.8 0 l0 -0.56 l-5.36 0 l0 9.92 l0.56 0 z M53.14 20 l0 -0.54 l-5 0 l0 -4.14 l0.8 0 l0 -0.54 l-1.36 0 l0 5.22 l5.56 0 z M56.39999999999999 16.06 l0 -11.82 l-0.66 0 l0 11.82 l0.66 0 z M61.779999999999994 20 l0 -0.68 l-5.38 0 l0 -1.96 l-0.66 0 l0 2.64 l6.04 0 z"></path></g></svg>
         </div>
         <div class="navBar_elems">
-            <a href="#sectionHome">Home</a>
-            <a href="#sectionAbout">About me</a>
-            <a href="#sectionSkills">Skills</a>
-            <a href="#sectionProjects">Projects</a>
-            <a href="#sectionContact">Contact</a>
+            <a class="links" id="link1" onclick="changeStyle(this)" href="#sectionHome">Home</a>
+            <a class="links" id="link2" onclick="changeStyle(this)" href="#sectionAbout">About me</a>
+            <a class="links" id="link3" onclick="changeStyle(this)" href="#sectionSkills">Skills</a>
+            <a class="links" id="link4" onclick="changeStyle(this)" href="#sectionProjects">Projects</a>
+            <a class="links" id="link5" onclick="changeStyle(this)" href="#sectionContact">Contact</a>
         </div>
     </div>
-    <section class="section_identifier" id="sectionHome">
+    
+    <section class="section_container" id="sectionHome">
         <div class="middle_container">
             <div class="left_container">
                 <h1 class="nameTitle">
@@ -39,6 +41,7 @@
                         Hire me!
                     </button>
                     <button class="btn_cv">
+                        
                         Download my CV
                     </button>
                 </div>
@@ -53,6 +56,7 @@
             </div>
         </div>
     </section>
+    
     <section class="section_container" id="sectionAbout">
         <div class="sectionTitle" >
             About me
@@ -60,10 +64,8 @@
         <div class="middle_about_container">
             <div class="paragraph_container">
                 <p class="paragraph">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Repellat inventore dolore, consequatur qui obcaecati enim.
-                    Reiciendis eius doloribus distinctio minima repellat iure eligendi
-                    laudantium impedit, asperiores magnam, earum, quis maxime!
+                    I'm NAILI Noufel, 3rd year student at Higher National School of Computer
+                    science engineering ESI ex INI, 
                 </p>
             </div> 
         </div>
@@ -75,45 +77,47 @@
         <div class="skills_middle_container">
             <div class="skill_container_right">
                 <div class="skill_title">
-                    Skill set 1
+                    Data science
                 </div>
                 <div class="skill_list_container">
                     <ul class="skill_list">
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.veniam praesentium facere voluptas quis</li>
+                        <li>Data analytics and manipulation using Python (pandas and NumPy packages)</li>
+                        <li>Data visualisation with Python (matplotlib and seaborn packages).</li>
+                        <li>Data engineering with Python </li>
                     </ul>
                 </div>
                 <div class="skill_title">
-                    Skill set 2
+                    Software development
                 </div>
                 <div class="skill_list_container">
                     <ul class="skill_list">
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.veniam praesentium facere voluptas quis</li>
+                        <li>Good practice experience with JAVA and C (small projects and school work).</li>
+                        <li>Basic knowledge of Back-end web development with NodeJS framework.</li>
+                        <li>Relational data bases with SQL (PostgreSQL)</li>
+                        <li>Git and GitHub for version control</li>
                     </ul>
                 </div>
                 <div class="skill_title">
-                    Skill set 2
+                    Design and multimedia
                 </div>
                 <div class="skill_list_container">
                     <ul class="skill_list">
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.veniam praesentium facere voluptas quis</li>
+                        <li>Good experience of video editing with Premier pro.</li>
+                        <li>Good experience of photo editing with Photoshop.</li>
+                        <li>2D design with Illustrator and Canva</li>
                     </ul>
                 </div>
             </div>
             <div class="skill_container_left">
                 <div class="skill_title">
-                    Skill set 4
+                    Soft and communication skills
                 </div>
                 <div class="skill_list_container">
                     <ul class="skill_list">
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.veniam praesentium facere voluptas quis</li>
+                        <li>Langues: Arabic(native), English (fluent), French (fluent), Spanish (basic knowledge).</li>
+                        <li>Autodidacticism (Self-teaching).</li>
+                        <li>Public speaking and presenting</li>
+                        <li>Leadership spirit and teamwork (school projects and club work)</li>
                     </ul>
                 </div>
             </div>
@@ -128,16 +132,19 @@
         <div class="projects_middle_container" >
             <div class="project_container">
                 <div class="project_title">
-                    project title 1
+                    2nd year's project at ESI
                 </div>
-                <div class="project_content">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Natus totam molestias sunt atque temporibus et explicabo beatae,
-                    alias corporis aperiam nam eveniet officia nihil quis distinctio 
-                    dolor repellat veritatis debitis.
+                <div class="project_content_container">
+                    <div class="project_content">
+                        Member of a Front-end web application development team for school’s Direction 
+                        of studies (DE)Designed and implemented web pages for the application
+                    </div>
+                    <div class="project_pic">
+                        <img src="../Img/esiLog.png" alt="Project logo">
+                    </div>
                 </div>
             </div>    
-            <div class="project_container">
+            <!-- <div class="project_container">
                 <div class="project_title">
                     project title 2
                 </div>
@@ -147,15 +154,15 @@
                     alias corporis aperiam nam eveniet officia nihil quis distinctio 
                     dolor repellat veritatis debitis.
                 </div>
-            </div>    
+            </div>     -->
         </div>
     </section>
-    <section class="section_identifier" id="sectionContact">
+    <section class="section_container" style="margin-bottom: 300px;" id="sectionContact">
         <div class="sectionTitle" >
             Contact
         </div>
         <div class="contactPage_middle_container" >
-            <div class="contact_right_container">
+            <div class="contact_upper_container">
                 <div class="contact_container">
                     <div class="icon">
                         <img  src="../Img/Gmail1.png" alt="Email logo">
@@ -164,22 +171,7 @@
                         <a href="https://www.jn_naili@esi.dz">jn_naili@esi.dz</a>
                     </div>
                 </div>
-                <div class="contact_container">
-                    <div class="icon">
-                        <img src="../Img/LinkedIn.png" alt="LinkedIn logo">
-                    </div>
-                    <div class="link">
-                        <a href="https://www.linkedin.com/in/noufel-naili-b4204921b">linkedin.com/in/noufel-naili-b4204921b</a>
-                    </div>
-                </div>
-                <div class="contact_container">
-                    <div class="icon">
-                        <img src="../Img/Github.png" alt="Github logo">
-                    </div>
-                    <div class="link">
-                        <a href="https://www.github.com/Noufel17">github.com/Noufel17</a>
-                    </div>
-                </div>
+                
                 <div class="contact_container">
                     <div class="icon">
                         <img src="../Img/Phone.png" alt="Phone logo">
@@ -189,34 +181,26 @@
                     </div>
                 </div>
             </div>
-            <div class="contact_left_container">
+            <div class="contact_lower_container">
                 <div class="contact_container">
-                    <div class="icon">
+                    <a class="iconLower" href="https://www.instagram.com/noufel_17/">
                         <img src="../Img/Instagram.png" alt="instagram logo">
-                    </div>
-                    <div class="link">
-                        <a href="https://www.instagram.com/noufel_17/">instagram.com/noufel_17/</a>
-                    </div>
+                    </a>
                 </div>
                 <div class="contact_container">
-                    <div class="icon">
+                    <a class="iconLower" href="https://www.facebook.com/Noufel17/">
                         <img src="../Img/Facebook.png" alt="facebook logo">
-                    </div>
-                    <div class="link">
-                        <a href="https://www.facebook.com/Noufel17/">facebook.com/Noufel17/</a>
-                    </div>
+                    </a>
                 </div>
                 <div class="contact_container">
-                    <div class="icon">
-                        <img src="../Img/Discord.png" alt="Discord logo">
-                    </div>
-                    <div class="link">
-                        <label>Noufel Naili#7216</label>
-                    </div>
+                    <a class="iconLower" href="https://www.linkedin.com/in/noufel-naili-b4204921b">
+                        <img src="../Img/LinkedIn.png" alt="LinkedIn logo">
+                    </a>
                 </div>
             </div>
+            
+            
         </div>
-    </section>
-    
+    </section>   
 </body>
 </html>
