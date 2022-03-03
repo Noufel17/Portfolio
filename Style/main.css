@@ -86,6 +86,7 @@ body{
 }
 .btn_hire{
     background-color: #2A00D6;
+    text-align: center;
     padding: 8px 35px;
     color:#FFFFFF;
     border-color: #2A00D6;
@@ -101,8 +102,10 @@ body{
 }
 .btn_cv{
     background-color: #FFFFFF;
+    text-align: center;
     padding: 8px 35px;
     color: #2A00D6;
+    border-style: 2px solid;
     border-color: #2A00D6;
     border-radius: 8px;
     font-size: 14px;
@@ -322,6 +325,7 @@ body{
 @media(max-width:1160px){
     .nameTitle{
         font-size: 33px;
+        line-height: 30px;
     }
     .buttons{
         width:100%
@@ -360,7 +364,9 @@ body{
 }
 @media(max-width:900px){
     .middle_container{
-        display: block;        
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
     }
     .left_container{
         display: block;
@@ -372,12 +378,15 @@ body{
     }
     .right_container{
         display: flex;
-        float:initial;
+        justify-content: center;
         align-items: center;
         width:100%;
+        position:relative;    
     }
     .imageFrame img{
-        display: none; /*couldnt fix it (it floats over about section)*/
+        position: relative;
+        margin-top: 20px;
+        margin-left:-40px;
         width: 250px;
         height: 300px;
         border-bottom-left-radius: 0px;
@@ -439,9 +448,63 @@ body{
     }
 
 }
-@media(max-width:768px){
-    
-}
-@media(max-width:640px){
-    
+@media(max-width:450px){
+    .buttons{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width:100%;
+    }
+    .btn_hire{
+        margin-bottom: 10px;
+    }
+
+    .nameTitle{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .links{
+        font-size: 12px;
+        margin-inline: 8px;
+    }
+    .links:hover, .links:active{
+        font-size: 14px;
+    }
+    .when_in_section{
+        font-size: 14px;
+    }
+    .project_title{
+        color:black;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .project_content_container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project_content{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .project_pic{
+        display: inline-block;
+        align-self:center;
+        height: 200px;
+        width:250px;
+    }
+    .skill_title{
+        font-size: 18px;
+    }
+    .project_title{
+        font-size: 18px;
+    }
+    .sectionTitle{
+        font-size: 20px;
+    }
+    body{
+        padding:0px 40px;
+        font-size:14px ;
+    }
+
 }
